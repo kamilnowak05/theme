@@ -53,18 +53,25 @@
           "label": "homepage_background_image_label"
         },
         {
+          "identifier": "hero_header_unit_bg_color",
+          "type": "color",
+          "description": "hero_header_unit_bg_color_description",
+          "label": "hero_header_unit_bg_color_label",
+          "value": "#FFFFFF"
+        },
+        {
           "identifier": "hero_unit_bg_color",
           "type": "color",
           "description": "hero_unit_bg_color_description",
           "label": "hero_unit_bg_color_label",
-          "value": "#FFFFFF"
+          "value": "#EBF6FE"
         },
         {
           "identifier": "hero_unit_title_color",
           "type": "color",
           "description": "hero_unit_title_color_description",
           "label": "hero_unit_title_color_label",
-          "value": "#ffffff"
+          "value": "#3A4245"
         },
         {
           "identifier": "header_border_color",
