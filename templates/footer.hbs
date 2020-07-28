@@ -1,0 +1,85 @@
+<footer class="hc_footer footer">
+   <div class="container">
+      <div class="row _grid">
+         <div class="_col _col_4">
+            <h3>Company</h3>
+            <ul>
+               <li><a href="#!">About Us</a></li>
+               <li><a href="#!">Our Team</a></li>
+               <li><a href="#!">Careers</a></li>
+               <li><a href="#!">Blog</a></li>
+            </ul>
+         </div>
+         <div class="_col _col_4">
+            <h3>Products</h3>
+            <ul>
+               <li><a href="#!">Features</a></li>
+               <li><a href="#!">Pricing</a></li>
+               <li><a href="#!">Examples</a></li>
+               <li><a href="#!">Guidelines</a></li>
+            </ul>
+         </div>
+         <div class="_col _col_4">
+            <h3>Help</h3>
+            <ul>
+               <li><a href="/hc">Support Center</a></li>
+               <li><a href="#!">Contact Us</a></li>
+               <li><a href="#!">Live Chat</a></li>
+               <li><a href="#!">Video Tutorials</a></li>
+            </ul>
+         </div>
+         <div class="_col _col_4">
+            <h3>Follow Us</h3>
+            <ul class="social">
+               {{#isnt settings.facebook_url '-'}}
+               <li><a href="{{settings.facebook_url}}" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.twitter_url '-'}}
+               <li><a href="{{settings.twitter_url}}" target="_blank"><i class="fab fa-twitter"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.linkedin_url '-'}}
+               <li><a href="{{settings.linkedin_url}}" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.pinterest_url '-'}}
+               <li><a href="{{settings.pinterest_url}}" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.instagram_url '-'}}
+               <li><a href="{{settings.instagram_url}}" target="_blank"><i class="fab fa-instagram"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.youtube_url '-'}}
+               <li><a href="{{settings.youtube_url}}" target="_blank"><i class="fab fa-youtube"></i></a></li>
+               {{/isnt}}
+            </ul>
+            <ul>
+               <li>
+                  <div class="footer-language-selector">   
+                      {{#if alternative_locales}}
+                      <h3>Select Language</h3>
+                      <div class="dropdown language-selector">
+                         <button class="dropdown-toggle" aria-haspopup="true">
+                            {{current_locale.name}}
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon">
+                               <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"/>
+                            </svg>
+                         </button>
+                         <span class="dropdown-menu dropdown-menu-end" role="menu">
+                         {{#each alternative_locales}}
+                         <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+                         {{name}}
+                         </a>
+                         {{/each}}
+                         </span>
+                      </div>
+                      {{/if}}
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</footer>
+<aside class="footer_copyright text-center">
+   <div class="container">
+      <p>&copy; <span id="year"></span> Theme by <a target="_blank" href="https://customersupporttheme.com/" title="Designed by Customer Support Theme">Customer Support Theme </a>. All rights reserved.</p>
+   </div>
+</aside>

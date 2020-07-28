@@ -1,0 +1,499 @@
+{
+  "name": "Obscu Zendesk Theme (CST)",
+  "author": "Customer Support Theme",
+  "version": "4.0.3",
+  "api_version": 2,
+  "default_locale": "en-us",
+  "settings": [
+    {
+      "label": "brand_group_label",
+      "variables": [
+        {
+          "identifier": "logo",
+          "type": "file",
+          "description": "logo_description",
+          "label": "logo_label"
+        },
+        {
+          "identifier": "favicon",
+          "type": "file",
+          "description": "favicon_description",
+          "label": "favicon_label"
+        }
+      ]
+    },
+    {
+      "label": "hero_group_label",
+      "variables": [
+        {
+          "identifier": "hero_show_elements",
+          "type": "list",
+          "description": "hero_show_description",
+          "label": "hero_show_label",
+          "value": "background_color",
+          "options": [
+            {
+              "label": "with_color",
+              "value": "background_color"
+            },
+            {
+              "label": "with_image",
+              "value": "background_image"
+            },
+            {
+              "label": "with_gradiant",
+              "value": "background_gradiant"
+            }
+          ]
+        },
+        {
+          "identifier": "homepage_background_image",
+          "type": "file",
+          "description": "homepage_background_image_description",
+          "label": "homepage_background_image_label"
+        },
+        {
+          "identifier": "hero_unit_bg_color",
+          "type": "color",
+          "description": "hero_unit_bg_color_description",
+          "label": "hero_unit_bg_color_label",
+          "value": "#FFFFFF"
+        },
+        {
+          "identifier": "hero_unit_title_color",
+          "type": "color",
+          "description": "hero_unit_title_color_description",
+          "label": "hero_unit_title_color_label",
+          "value": "#ffffff"
+        },
+        {
+          "identifier": "header_border_color",
+          "type": "color",
+          "description": "border_description",
+          "label": "border_label",
+          "value": "#2b8eb1"
+        },
+        {
+          "identifier": "hero_title",
+          "type": "text",
+          "description": "hero_title_description",
+          "label": "hero_title_label",
+          "value": "Welcome to our Support"
+        },
+        {
+          "identifier": "hero_info",
+          "type": "text",
+          "description": "hero_info_description",
+          "label": "hero_info_label",
+          "value": "Search for answers to your questions by entering keywords below, or look through our knowledge base."
+        },
+        {
+          "identifier": "community_background_image",
+          "type": "file",
+          "description": "community_background_image_description",
+          "label": "community_background_image_label"
+        }
+      ]
+    },
+    {
+      "label": "search_group_label",
+      "variables": [
+        {
+          "identifier": "search_placeholder",
+          "type": "text",
+          "description": "search_placeholder_description",
+          "label": "search_placeholder_label",
+          "value": "Search the helpcenter..."
+        },
+        {
+          "identifier": "instant_search",
+          "type": "checkbox",
+          "description": "instant_search_description",
+          "label": "instant_search_label",
+          "value": true
+        },
+        {
+          "identifier": "scoped_kb_search",
+          "type": "checkbox",
+          "description": "scoped_knowledge_base_search_description",
+          "label": "scoped_knowledge_base_search_label",
+          "value": true
+        },
+        {
+          "identifier": "scoped_community_search",
+          "type": "checkbox",
+          "description": "scoped_community_search_description",
+          "label": "scoped_community_search_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "colors_group_label",
+      "variables": [
+        {
+          "identifier": "brand_color",
+          "type": "color",
+          "description": "brand_color_description",
+          "label": "brand_color_label",
+          "value": "rgba(43, 142, 177, 1)"
+        },
+        {
+          "identifier": "brand_text_color",
+          "type": "color",
+          "description": "brand_text_color_description",
+          "label": "brand_text_color_label",
+          "value": "rgba(255, 255, 255, 1)"
+        },
+        {
+          "identifier": "text_color",
+          "type": "color",
+          "description": "text_color_description",
+          "label": "text_color_label",
+          "value": "rgba(51, 51, 51, 1)"
+        },
+        {
+          "identifier": "link_color",
+          "type": "color",
+          "description": "link_color_description",
+          "label": "link_color_label",
+          "value": "rgba(43, 142, 177, 1)"
+        },
+        {
+          "identifier": "footer_color",
+          "type": "color",
+          "description": "footer_color_description",
+          "label": "footer_color_label",
+          "value": "#1a74b0"
+        },
+        {
+          "identifier": "footer_copyright_color",
+          "type": "color",
+          "description": "footer_copyright_description",
+          "label": "footer_copyright_label",
+          "value": "#2f97be"
+        }
+      ]
+    },
+    {
+      "label": "fonts_group_label",
+      "variables": [
+        {
+          "identifier": "text_font",
+          "type": "list",
+          "description": "text_font_description",
+          "label": "text_font_label",
+          "value": "'Open Sans', sans-serif",
+          "options": [
+            {
+              "label": "Open Sans",
+              "value": "'Open Sans', sans-serif"
+            },
+            {
+              "label": "System",
+              "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+            },
+            {
+              "label": "Arial",
+              "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Arial Black",
+              "value": "'Arial Black', Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Baskerville",
+              "value": "Baskerville, 'Times New Roman', Times, serif"
+            },
+            {
+              "label": "Century Gothic",
+              "value": "'Century Gothic', AppleGothic, sans-serif"
+            },
+            {
+              "label": "Copperplate Light",
+              "value": "'Copperplate Light', 'Copperplate Gothic Light', serif"
+            },
+            {
+              "label": "Courier New",
+              "value": "'Courier New', Courier, monospace"
+            },
+            {
+              "label": "Futura",
+              "value": "Futura, 'Century Gothic', AppleGothic, sans-serif"
+            },
+            {
+              "label": "Garamond",
+              "value": "Garamond, 'Hoefler Text', Times New Roman, Times, serif"
+            },
+            {
+              "label": "Geneva",
+              "value": "Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif"
+            },
+            {
+              "label": "Georgia",
+              "value": "Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif"
+            },
+            {
+              "label": "Helvetica",
+              "value": "Helvetica, Arial, sans-serif"
+            },
+            {
+              "label": "Helvetica Neue",
+              "value": "'Helvetica Neue', Arial, Helvetica, sans-serif"
+            },
+            {
+              "label": "Impact",
+              "value": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
+            },
+            {
+              "label": "Lucida Grande",
+              "value": "'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif"
+            },
+            {
+              "label": "Trebuchet MS",
+              "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "home_page_group_label",
+      "variables": [
+        {
+          "identifier": "categories_bg_color",
+          "type": "color",
+          "description": "categories_bg_color_description",
+          "label": "categories_bg_color_label",
+          "value": "#EEF3F6"
+        },
+        {
+          "identifier": "categories_icon_color",
+          "type": "color",
+          "description": "categories_icon_color_description",
+          "label": "categories_icon_color_label",
+          "value": "#2b8eb1"
+        },
+        {
+          "identifier": "toggle_promoted_articles",
+          "type": "list",
+          "description": "toggle_promoted_articles_description",
+          "label": "toggle_promoted_articles_label",
+          "value": "yes",
+          "options": [
+            {
+              "label": "Yes",
+              "value": "yes"
+            },
+            {
+              "label": "No",
+              "value": "no"
+            }
+          ]
+        },
+        {
+          "identifier": "toggle_recently_viewed_article",
+          "type": "list",
+          "description": "toggle_recently_viewed_article_description",
+          "label": "toggle_recently_viewed_article_label",
+          "value": "yes",
+          "options": [
+            {
+              "label": "Yes",
+              "value": "yes"
+            },
+            {
+              "label": "No",
+              "value": "no"
+            }
+          ]
+        },
+        {
+          "identifier": "toggle_recent_activity",
+          "type": "list",
+          "description": "recent_activity_description",
+          "label": "recent_activity_label",
+          "value": "yes",
+          "options": [
+            {
+              "label": "Yes",
+              "value": "yes"
+            },
+            {
+              "label": "No",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "footer_group_label",
+      "variables": [
+        {
+          "identifier": "facebook_url",
+          "type": "text",
+          "description": "facebook_url_description",
+          "label": "Facebook",
+          "value": "https://www.facebook.com/customersupporttheme/"
+        },
+        {
+          "identifier": "twitter_url",
+          "type": "text",
+          "description": "twitter_url_description",
+          "label": "Twitter",
+          "value": "https://twitter.com/zendesk_theme"
+        },
+        {
+          "identifier": "linkedin_url",
+          "type": "text",
+          "description": "linkedin_url_description",
+          "label": "LinkedIn",
+          "value": "https://www.linkedin.com/"
+        },
+        {
+          "identifier": "pinterest_url",
+          "type": "text",
+          "description": "pinterest_url_description",
+          "label": "Pinterest",
+          "value": "https://pinterest.com/CustomerSupportTheme/"
+        },
+        {
+          "identifier": "instagram_url",
+          "type": "text",
+          "description": "instagram_url_description",
+          "label": "Instagram",
+          "value": "https://www.instagram.com/customer_support_theme/"
+        },
+        {
+          "identifier": "youtube_url",
+          "type": "text",
+          "description": "youtube_url_description",
+          "label": "YouTube",
+          "value": "https://www.youtube.com/channel/UCf0AyV9u0-pKby0UXRXFYUw/videos"
+        }
+      ]
+    },
+    {
+      "label": "article_page_group_label",
+      "variables": [
+        {
+          "identifier": "article_bg_color",
+          "type": "color",
+          "description": "article_bg_color_description",
+          "label": "article_bg_color_label",
+          "value": "#EEF3F6"
+        },
+        {
+          "identifier": "show_articles_in_section",
+          "type": "list",
+          "description": "articles_in_section_description",
+          "label": "articles_in_section_label",
+          "value": "yes",
+          "options": [
+            {
+              "label": "Yes",
+              "value": "yes"
+            },
+            {
+              "label": "No",
+              "value": "no"
+            }
+          ]
+        },
+        {
+          "identifier": "show_article_author",
+          "type": "checkbox",
+          "description": "article_author_description",
+          "label": "article_author_label",
+          "value": true
+        },
+        {
+          "identifier": "show_article_comments",
+          "type": "checkbox",
+          "description": "article_comments_description",
+          "label": "article_comments_label",
+          "value": true
+        },
+        {
+          "identifier": "show_follow_article",
+          "type": "checkbox",
+          "description": "follow_article_description",
+          "label": "follow_article_label",
+          "value": true
+        },
+        {
+          "identifier": "show_recently_viewed_articles",
+          "type": "checkbox",
+          "description": "recently_viewed_articles_description",
+          "label": "recently_viewed_articles_label",
+          "value": true
+        },
+        {
+          "identifier": "show_related_articles",
+          "type": "checkbox",
+          "description": "related_articles_description",
+          "label": "related_articles_label",
+          "value": true
+        },
+        {
+          "identifier": "show_article_sharing",
+          "type": "checkbox",
+          "description": "article_sharing_description",
+          "label": "article_sharing_label",
+          "value": true
+        },
+        {
+          "identifier": "show_article_voting",
+          "type": "checkbox",
+          "description": "article_voting_description",
+          "label": "article_voting_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "section_page_group_label",
+      "variables": [
+        {
+          "identifier": "show_follow_section",
+          "type": "checkbox",
+          "description": "follow_section_description",
+          "label": "follow_section_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "community_post_group_label",
+      "variables": [
+        {
+          "identifier": "show_follow_post",
+          "type": "checkbox",
+          "description": "follow_post_description",
+          "label": "follow_post_label",
+          "value": true
+        },
+        {
+          "identifier": "show_post_sharing",
+          "type": "checkbox",
+          "description": "post_sharing_description",
+          "label": "post_sharing_label",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "community_topic_group_label",
+      "variables": [
+        {
+          "identifier": "show_follow_topic",
+          "type": "checkbox",
+          "description": "follow_topic_description",
+          "label": "follow_topic_label",
+          "value": true
+        }
+      ]
+    }
+  ]
+}

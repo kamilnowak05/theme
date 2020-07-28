@@ -1,0 +1,29 @@
+<section id="main-content" class="hero {{#is settings.hero_show_elements 'background_image'}}hero-image{{/is}} {{#is settings.hero_show_elements 'background_gradiant'}}hero-gradiant{{/is}}">
+  <div class="hero-inner">
+    <h2 class="visibility-hidden">{{ t 'search' }}</h2>
+    <h1 class="welcome_text">{{settings.hero_title}}</h1>
+    <p class="help-center-details">{{settings.hero_info}}</p>
+    {{search instant=settings.instant_search class='search search-full' placeholder=settings.search_placeholder}}
+  </div>
+</section>
+
+<section class="breadcrumbs__block">
+<div class="container">
+  <nav class="sub-nav">
+    {{breadcrumbs}}
+  </nav>
+  </div>
+</section>
+
+<div class="container">
+  <h1 class="new-request-title">
+    {{t 'submit_a_request'}}
+    <span class="follow-up-hint">
+      {{follow_up}}
+    </span>
+  </h1>
+
+  <div id="main-content" class="form">
+    {{request_form}}
+  </div>
+</div>

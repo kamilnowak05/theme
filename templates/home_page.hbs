@@ -1,0 +1,84 @@
+<h1 class="visibility-hidden">{{ help_center.name }}</h1>
+
+<section id="main-content" class="hero {{#is settings.hero_show_elements 'background_image'}}hero-image{{/is}} {{#is settings.hero_show_elements 'background_gradiant'}}hero-gradiant{{/is}}">
+  <div class="hero-inner">
+    <h2 class="visibility-hidden">{{ t 'search' }}</h2>
+    <h1 class="welcome_text">{{settings.hero_title}}</h1>
+    <p class="help-center-details">{{settings.hero_info}}</p>
+    {{search instant=settings.instant_search class='search search-full' placeholder=settings.search_placeholder}}
+  </div>
+</section>
+
+<section class="home__categories">
+    <div class="container">
+      <section class="knowledge-base">
+        <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
+        <section class="categories blocks">
+          <ul class="blocks-list">
+            {{#each categories}}
+              {{#if ../has_multiple_categories}}
+                <li class="blocks-item" id="{{id}}">
+                  <a href='{{url}}' class="blocks-item-link">
+                    <span class="category-icon"></span>
+                    <span class="blocks-item-title">{{name}}</span>
+                    <span class="blocks-item-description">{{excerpt description characters=150}}</span>
+                  </a>
+                </li>
+              {{else}}
+                {{#each sections}}
+                  <li class="blocks-item" id="{{id}}">
+                    <a href='{{url}}' class="blocks-item-link">
+                      <span class="category-icon"></span>
+                      <span class="blocks-item-title">
+                        {{name}}
+                      </span>
+                      <span class="blocks-item-description">{{excerpt description characters=150}}</span>
+                    </a>
+                  </li>
+                {{/each}}
+              {{/if}}
+            {{/each}}
+          </ul>
+          {{pagination}}
+        </section>
+      </section>
+    </div>
+</section>
+
+<div class="container">
+  <section class="section knowledge-base">
+    <section class="quick-articles">
+        {{#is settings.toggle_promoted_articles "yes"}}
+        {{#if promoted_articles}}
+          <section class="articles">
+            <h2>{{t 'promoted_articles'}}</h2>
+            <ul class="promoted-articles">
+              {{#each promoted_articles}}
+                <li class="promoted-articles-item">
+                    <a href="{{url}}">
+                      {{title}}
+
+                      {{#if internal}}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" class="icon-lock" title="{{t 'internal'}}">
+                          <rect width="12" height="9" x="2" y="7" fill="currentColor" rx="1" ry="1"/>
+                          <path fill="none" stroke="currentColor" d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"/>
+                        </svg>
+                      {{/if}}
+                    </a>
+                </li>
+              {{/each}}
+            </ul>
+          </section>
+        {{/if}}
+        {{/is}}
+        {{#is settings.toggle_recently_viewed_article "yes"}}
+            {{recent_articles}}
+        {{/is}}
+        {{#is settings.toggle_recent_activity "yes"}}
+             <section>
+                {{recent_activity}}
+             </section>
+         {{/is}}
+    </section>
+  </section>
+</div>
